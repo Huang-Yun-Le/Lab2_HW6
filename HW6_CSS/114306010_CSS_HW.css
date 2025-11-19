@@ -1,0 +1,162 @@
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    width: 1000px;
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* 左邊 Panel */
+.left-panel {
+    width: 30%;
+    background-color: #d9e3f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-panel {
+    flex: 3;   
+}
+
+.photo-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 讓照片填滿，不會變形太怪 */
+    display: block;
+}
+
+.info-panel {
+    flex: 7;                     /* 7 份 */
+    background-color: #6d8ecf;   /* 你可以換成自己喜歡的藍色 */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.info-panel ul {
+    list-style: none;
+    padding-left: 0;
+}
+.name {
+    margin: 0 0 4px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin: 0 0 16px;
+    font-size: 14px;
+}
+
+.school-logo {
+    width: 150px;
+    margin-top: auto;
+    display: block;
+}
+
+/* 右邊 Panel */
+.right-panel {
+    width: 70%;
+    padding: 25px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    border-bottom: 2px solid #777;
+    margin-bottom: 10px;
+}
+
+/* Education */
+.timeline-item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.year {
+    width: 120px;
+    font-weight: bold;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+/* Skills */
+.tag {
+    display: inline-block;
+    background-color: #bcd4ff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+/* Homework & Lab */
+.hw-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hw-column, .lab-column {
+    width: 50%;
+    background-color: #f2f4f8;
+    padding: 15px;
+    border-radius: 10px;
+}
+.hw-column ul, .lab-column ul {
+    padding-left: 20px;  
+    list-style: disc;     
+}
+
+.hw-column a, .lab-column a {
+    text-decoration: none;
+    color: #2a3d66;
+}
+
+.hw-column a:hover, .lab-column a:hover {
+    color: #112244;
+}
+
+/* Favorite Music */
+.music-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+.music-item {
+    width: 120px;            /* 固定寬度避免歌名換行把版面撐爆 */
+    text-align: center;
+    flex-shrink: 0;          /* 防止被壓縮造成畫面切掉 */
+}
+
+.music-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.music-item p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.music-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
